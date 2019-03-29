@@ -1,0 +1,57 @@
+<mat-toolbar color="orange">
+  <mat-toolbar-row>
+    <div
+      class="home-link"
+      [routerLink]="['/']"
+      routerLinkActive="router-link-active"
+    >
+      <img class="brand-logo" src="./assets/food-logo.png" />
+      <span>PizzaBurger</span>
+    </div>
+    <span class="example-spacer"></span>
+    <mat-icon
+      matBadge="{{ totalItems }}"
+      matBadgePosition="before"
+      matBadgeColor="primary"
+      [routerLink]="['/shopping-cart']"
+      routerLinkActive="router-link-active"
+      class="hamburger-icon"
+      aria-hidden="false"
+      aria-label="Example delete icon"
+      >shopping_cart</mat-icon
+    >
+    <mat-icon
+      class="hamburger-icon"
+      aria-hidden="false"
+      aria-label="Example delete icon"
+      [matMenuTriggerFor]="menu"
+      >menu</mat-icon
+    >
+  </mat-toolbar-row>
+  <mat-menu #menu="matMenu">
+    <button
+      mat-menu-item
+      [routerLink]="['/menu/pizzas']"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon>local_pizza</mat-icon>
+      <span>Pizza</span>
+    </button>
+    <button
+      mat-menu-item
+      [routerLink]="['/menu/burgers']"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon>fastfood</mat-icon>
+      <span>Burgers</span>
+    </button>
+    <button
+      mat-menu-item
+      [routerLink]="['/menu/desserts']"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon>local_drink</mat-icon>
+      <span>Desserts</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

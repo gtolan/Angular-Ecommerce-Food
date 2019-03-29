@@ -1,0 +1,48 @@
+.container.grid-layout {
+  width: 90vw;
+  display: grid;
+  grid-template-rows: 15rem 15rem;
+  grid-template-columns: 2fr 1fr;
+  margin-left: 5vw;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  grid-gap: 1rem;
+}
+.tile.right {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.tile {
+  background-size: cover;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px 3px grey;
+}
+.tile div {
+  transition: 0.4s ease-in;
+  background-color: #00000059;
+  padding: 0rem 1rem;
+  color: white;
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 2px black;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.tile:hover div {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  text-align: center;
+  padding: 0rem 0rem;
+  vertical-align: middle;
+  display: block;
+  padding-top: 4rem;
+  background-color: #000000a8;
+  font-size: 3rem;
+}

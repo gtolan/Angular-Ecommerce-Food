@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Caramel Chew Chew",
+    "price": 7.0,
+    "description": "Calling all caramel lovers! Fulfilling those caramel cravings since the late 90’s, with caramel ice cream, caramel-filled chocolatey cups & a caramel swirl to boot, this flavour takes you to a whole new level of rich, caramel euphoria.",
+    "image": "./assets/desserts/caramel-chew-chew-landing-open (1).png"
+  },
+  {
+    "name": "Minter Wonderland",
+    "price": 7.0,
+    "description": "Back by popular demand for the chilly season, one of Ben & Jerry's most wintry flavours...Minter Wonderland! We've packed in all the festive peppermint & chocolatey chunks you should need to fuel your coolest yule.",
+    "image": "./assets/desserts/minter-wonderland-landing-open.png"
+  },
+  {
+    "name": "Chocolate Fudge Brownie",
+    "price": 7.0,
+    "description": "This fudge-tastic phenomenon has been a part of our flavour family since 1991 & we’ve always used brownies from the Greyston Bakery in Yonkers, New York – not only are they the best brownies we’ve ever tasted but Greyston help the homeless gain work skills & become self-sufficient so they do good AND taste good too. ",
+    "image": "./assets/desserts/chocolate-fudge-brownie-landing-open.png"
+  },
+  {
+    "name": "Wholly Couch",
+    "price": 7.0,
+    "description": "Ah, the humble couch. Old faithful. That comfy, in-it-for-the-long-haul place we like to call “home” when it’s time to kick back for the evening. Whether battling a box set, embarking on a movie marathon, or conquering a critical catch up, Wholly Couch have we got a cosy concoction for you!",
+    "image": "./assets/desserts/wholly-couch-landing-open.png"
+  }
+]

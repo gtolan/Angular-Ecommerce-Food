@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Catalan Chicken and Chorizo",
+    "price": 22.0,
+    "toppings": "Mozzarella, Chicken, Chorizo,Onions, Green & Red Peppers",
+    "image": "./assets/pizzas/catalanchicken.png"
+  },
+  {
+    "name": "The Cheeseburger",
+    "price": 22.0,
+    "toppings": "Mozzarella, Ground Beef, Gherkins,Onions, Green & Red Peppers",
+    "image": "./assets/pizzas/cheesburger.png"
+  },
+  {
+    "name": "The MeatFielder",
+    "price": 24.0,
+    "toppings": "Ham, Pepperoni, Meatballs, Rashers, Mozzarella, Chorizo,Onions, Green & Red Peppers",
+    "image": "./assets/pizzas/meatfielder.png"
+  },
+  {
+    "name": "The Margarita",
+    "price": 19.0,
+    "toppings": "Mozzarella,Tomatoe sauce",
+    "image": "./assets/pizzas/margarita.png"
+  },
+  {
+    "name": "The Mighty Meaty",
+    "price": 24.0,
+    "toppings": "Ham, Pepperoni, Meatballs, Mushrooms, Mozzarella,Onions, Green & Red Peppers",
+    "image": "./assets/pizzas/MightyMeat.png"
+  },
+  {
+    "name": "The Pepperoni Passion",
+    "price": 22.0,
+    "toppings": "Pepperoni, Mozzarella ,Onions, Green & Red Peppers",
+    "image": "./assets/pizzas/pepperonipassion.png"
+  },
+  {
+    "name": "Texas BBQ",
+    "price": 24.0,
+    "toppings": "Chicken strips, Pepperoni, Meatballs, Rashers, Mozzarella, Chicken, Chorizo,Onions, Green & Red Peppers",
+    "image": "./assets/pizzas/texasbbq.png"
+  },
+  {
+    "name": "Vegi Supreme",
+    "price": 22.0,
+    "toppings": "Mozzarella ,Onions, Sweetcorn, Green & Red Peppers",
+    "image": "./assets/pizzas/vegisupreme.png"
+  },
+  {
+    "name": "The Fullhouse",
+    "price": 24.0,
+    "toppings": "Ham,Pepperoni, Meatballs,Pineapple,Rashers, Mozzarella, Chorizo,Onions, Green & Red Peppers",
+    "image": "./assets/pizzas/fullhouse.png"
+  }
+]

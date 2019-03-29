@@ -1,0 +1,40 @@
+footer {
+  font-family: "Montserrat", sans-serif;
+}
+.footer-copyright.text-center.py-3 {
+  padding: 1rem;
+  background-color: orangered;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.container-fluid {
+  background-color: #ff4500c2;
+}
+.row {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.row .col-md-6 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: white;
+  text-align: center;
+}
+.row .col-md-3 {
+  padding-left: 3rem;
+  color: white;
+}
+.col-md-3 ul {
+  list-style: none;
+  padding-left: 0px;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-copyright a {
+  color: white;
+  text-decoration: none;
+}

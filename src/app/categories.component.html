@@ -1,0 +1,12 @@
+<div class="container grid-layout">
+  <a
+    *ngFor="let section of sections"
+    matRipple
+    [matRippleCentered]="centered"
+    class="tile {{ section.position }}"
+    routerLink="{{ section.link }}"
+    [style.backgroundImage]="'url(' + section.poster + ')'"
+  >
+    <div>{{ section.title }}</div>
+  </a>
+</div>

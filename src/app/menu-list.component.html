@@ -1,0 +1,79 @@
+<h3 *ngIf="burgerTitle === true" class="menu-title">Burgers</h3>
+<ul *ngIf="showBurgers === true">
+  <li *ngFor="let burger of burgers">
+    <mat-card class="example-card">
+      <mat-card-header class="mat-header">
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title class="card-mat-title">{{
+          burger.name
+        }}</mat-card-title>
+        <mat-card-subtitle> </mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{ burger.image }}" alt="Photo of Pizza" />
+      <mat-card-content>
+        <p>{{ burger.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="warn" (click)="addItemToCart(burger)">
+          <mat-icon aria-hidden="false" aria-label="Add to cart"
+            >add_shopping_cart</mat-icon
+          >
+          Add to Cart
+        </button>
+        <div class="price">${{ burger.price }}</div>
+      </mat-card-actions>
+    </mat-card>
+  </li>
+</ul>
+
+<h3 *ngIf="pizzaTitle === true" class="menu-title">Pizzas</h3>
+<ul *ngIf="showPizzas === true">
+  <li *ngFor="let pizza of pizzas">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title>{{ pizza.name }}</mat-card-title>
+        <mat-card-subtitle> </mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{ pizza.image }}" alt="Photo of Pizza" />
+      <mat-card-content>
+        <p>{{ pizza.toppings }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="warn" (click)="addItemToCart(pizza)">
+          <mat-icon aria-hidden="false" aria-label="Add to cart"
+            >add_shopping_cart</mat-icon
+          >
+          Add to Cart
+        </button>
+        <div class="price">${{ pizza.price }}</div>
+      </mat-card-actions>
+    </mat-card>
+  </li>
+</ul>
+
+<h3 *ngIf="dessertTitle === true" class="menu-title">Desserts</h3>
+<ul *ngIf="showDesserts === true">
+  <li *ngFor="let dessert of desserts">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title>{{ dessert.name }}</mat-card-title>
+        <mat-card-subtitle> </mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{ dessert.image }}" alt="Photo of dessert" />
+      <mat-card-content>
+        <p>{{ dessert.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="warn" (click)="addItemToCart(dessert)">
+          <mat-icon aria-hidden="false" aria-label="Add to cart"
+            >add_shopping_cart</mat-icon
+          >
+          Add to Cart
+        </button>
+        <div class="price">${{ dessert.price }}</div>
+      </mat-card-actions>
+    </mat-card>
+  </li>
+</ul>

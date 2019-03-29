@@ -1,0 +1,46 @@
+<ul>
+  <li
+    *ngFor="let slide of slides"
+    class="hidden-slide"
+    [ngClass]="{ active: slide.id === activeCarouselSlide }"
+  >
+    <h2>{{ slide.title }}</h2>
+    <p>{{ slide.text }}</p>
+    <button mat-raised-button color="warn">See More</button>
+
+    <video
+      width="100%"
+      height="auto"
+      autoplay
+      loop
+      poster="{{ slide.video.poster }}"
+    >
+      <source src="{{ slide.video.webm }}" type="video/webm" />
+      <source src="{{ slide.video.mp4 }}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </li>
+</ul>
+<mat-icon
+  class="left-chevron"
+  (click)="leftSlide()"
+  aria-hidden="false"
+  aria-label="Slider Left"
+  >chevron_left</mat-icon
+>
+<div class="slide-controls">
+  <div
+    *ngFor="let slide of slides"
+    mat-card-avatar
+    [ngClass]="{ active: slide.id === activeCarouselSlide }"
+    [style.backgroundImage]="'url(' + slide.icon + ')'"
+    (click)="setActiveSlide(slide.id)"
+  ></div>
+</div>
+<mat-icon
+  (click)="rightSlide()"
+  class="right-chevron"
+  aria-hidden="false"
+  aria-label="Slider Right"
+  >chevron_right</mat-icon
+>

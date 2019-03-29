@@ -1,0 +1,102 @@
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  position: relative;
+  min-height: 32rem;
+  overflow: hidden;
+}
+ul li {
+  position: absolute;
+}
+
+ul li.hidden-slide {
+  display: none;
+}
+ul li.hidden-slide.active {
+  display: block;
+}
+ul li h2 {
+  position: absolute;
+  color: white;
+  font-size: 4rem;
+  margin-left: 2rem;
+  background-color: #0000008a;
+  padding: 0rem 1rem;
+}
+ul li p {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  color: white;
+  margin-left: 2rem;
+  background-color: #0000008a;
+  padding: 1rem 1rem;
+  margin-top: 9rem;
+  font-size: 1.2rem;
+}
+
+ul li button {
+  margin-top: 14rem;
+  position: absolute;
+  margin-left: 2rem;
+  z-index: 10;
+  background-color: orangered;
+}
+@media screen and (max-width: 600px) {
+  ul li video {
+    min-height: 360px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  ul {
+    min-height: 25rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  ul li video {
+    min-height: 29rem;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 900px) {
+  ul li video {
+    max-height: 29rem;
+    object-fit: cover;
+  }
+}
+
+.slide-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: -6rem;
+  z-index: 100;
+  position: absolute;
+  width: 100vw;
+}
+.slide-controls div.mat-card-avatar {
+  margin: 0 7px;
+  background-size: 100%;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.slide-controls div.mat-card-avatar.active {
+  border: 2px solid orangered;
+  margin-top: -2px;
+}
+.left-chevron,
+.right-chevron {
+  margin-top: -1.5em;
+  position: absolute;
+  margin: -8rem 0rem;
+  color: white;
+  font-size: 5rem;
+  text-shadow: 0px 0px 4px black;
+  cursor: pointer;
+}
+.left-chevron {
+  float: left;
+}
+.right-chevron {
+  right: 4rem;
+}

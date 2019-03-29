@@ -1,0 +1,23 @@
+<section>
+  <h1>Recieve discount codes</h1>
+  <form class="example-form" (ngSubmit)="subscribeButton()">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" [formControl]="emailFormControl" />
+      <mat-error
+        *ngIf="
+          emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <button class="subscribe" mat-raised-button color="warn">
+      Subscribe
+    </button>
+  </form>
+</section>

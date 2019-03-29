@@ -1,0 +1,11 @@
+<section matRipple>
+  <h1>
+    {{ title }}<span>{{ titlesub }}</span>
+  </h1>
+  <h3 class="old-price">{{ oldPrice | currency: "EUR":true }}</h3>
+  <h3 class="offer-price">{{ price | currency: "EUR":true }}</h3>
+  <button class="add-to-cart" (click)="addItemToCart(offer)">
+    Add to cart
+  </button>
+  <img src="./assets/pizzaOffer.jpg" class="section-bg" />
+</section>

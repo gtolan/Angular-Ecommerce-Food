@@ -1,0 +1,54 @@
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+.mat-card {
+  margin: 1rem;
+}
+.mat-header .mat-card-header-text {
+  margin: 0 0px;
+}
+mat-card mat-card-header .mat-card-header-text {
+  margin: 0 0px;
+}
+.mat-card-header-text {
+  margin: 0 0px !important;
+}
+.price {
+  display: inline-block;
+  float: right;
+  vertical-align: unset;
+  margin-top: 3px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  text-align: left;
+}
+
+.example-pizza-party {
+  color: hotpink;
+}
+.menu-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+snack-bar-container.mat-snack-bar-container.ng-tns-c9-1.ng-trigger.ng-trigger-state.mat-snack-bar-center.ng-star-inserted:before {
+  content: "\263B";
+  display: inline-block;
+  position: absolute;
+  font-size: 2rem;
+  right: 5px;
+  top: -1px;
+}

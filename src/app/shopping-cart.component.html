@@ -1,0 +1,75 @@
+<ng-container *ngIf="totalItems > 0; then showCart; else showEmpty">
+</ng-container>
+
+<ng-template #showEmpty>
+  <h1 class="empty-cart">No Items in your cart</h1>
+</ng-template>
+
+<ng-template #showCart>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Image Column -->
+    <ng-container matColumnDef="image">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <div mat-card-avatar>
+          <img class="food-avatar" src="{{ element.image }}" />
+        </div>
+      </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+
+    <!-- Price Column -->
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef>Price</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.price | currency: "EUR" }}
+      </td>
+    </ng-container>
+
+    <!-- Quantity Column -->
+    <ng-container matColumnDef="quantity">
+      <th mat-header-cell *matHeaderCellDef>Quantity</th>
+      <td mat-cell *matCellDef="let element">
+        <input
+          class="change-quantity"
+          type="number"
+          (change)="updateQuantity(element)"
+          [(ngModel)]="element.quantity"
+          value="{{ element.quantity }}"
+        />
+
+        <!-- {{ element.quantity }} -->
+        <button
+          (click)="removeItem(element)"
+          class=""
+          mat-icon-button
+          aria-label="Example icon-button with a heart icon"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <!-- Total Column -->
+    <ng-container matColumnDef="total">
+      <th mat-header-cell *matHeaderCellDef>Total</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.quantity * element.price | currency: "EUR" }}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <h4 class="total">Total: {{ cartTotal | currency: "EUR" }}</h4>
+  <button class="check-out" mat-raised-button color="warn">Checkout</button>
+</ng-template>

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "The Burger",
+    "price": 12.0,
+    "description": "200 gr. of veal and pork, lettuce, tomato, onion, pickle and special sauce.",
+    "image": "./assets/burgers/pimpam.png"
+  },
+  {
+    "name": "The Veggie",
+    "price": 12.0,
+    "description": "Eggplant, zucchini, feta cheese, tofu, lettuce, tomato, onion, pickle and special sauce.",
+    "image": "./assets/burgers/ppvegetal.png"
+  },
+  {
+    "name": "The Complete",
+    "price": 14.0,
+    "description": "200 gr. of veal and pork, lettuce, tomato, onion, pickle, cheese, egg, bacon and special sauce.",
+    "image": "./assets/burgers/PimPamBurger-Completa.png"
+  },
+  {
+    "name": "The Special",
+    "price": 14.0,
+    "description": "200 gr. of 100% veal, lettuce, tomato, onion, pickle and special sauce.",
+    "image": "./assets/burgers/PimPamBurger-SpecialBurger.png"
+  },
+  {
+    "name": "The Special Complete",
+    "price": 14.0,
+    "description": "200 gr. 100% veal, lettuce, tomato, onion, pickle, cheese, egg, bacon and special sauce.",
+    "image": "./assets/burgers/PimPamBurger-SpecialBurguerCompleta.png"
+  },
+  {
+    "name": "The Three Cheeses",
+    "price": 14.0,
+    "description": "200 gr. 100% veal, parmesan, feta, gouda, lettuce, tomato, onion, pickle and special sauce",
+    "image": "./assets/burgers/PimPamBurger_PimPam3quesos.png"
+  },
+  {
+    "name": "The Roquefort",
+    "price": 14.0,
+    "description": "150 or 200 gr. of beef and pork, roquefort, lettuce, tomato, onion, pickle.",
+    "image": "./assets/burgers/PimPamBurger-PimPamRoquefort.png"
+  },
+  {
+    "name": "The Chicken",
+    "price": 14.0,
+    "description": "Chicken breast, lettuce, tomato, onion, pickle and special sauce.",
+    "image": "./assets/burgers/PimPamBurger_PimPamPollo.png"
+  },
+  {
+    "name": "The BBQ",
+    "price": 14.0,
+    "description": "150 or 200 gr. of veal and pork, bacon, barbecue sauce, cheddar, lettuce, tomato, onion and pickle.",
+    "image": "./assets/burgers/PimPamBurger_PimPamBarbacoa.png"
+  }
+]
